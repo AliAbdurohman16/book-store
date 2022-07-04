@@ -1,4 +1,4 @@
-./config
-./controller
-./helper
+/config
+/controller
+/helper
 logout.php
