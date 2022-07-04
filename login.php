@@ -17,11 +17,11 @@
             echo password_hash("12345", PASSWORD_DEFAULT);
             ?> -->
             
-            <!-- <?php if (isset($_GET['error'])) { ?>
+            <?php if (isset($_GET['error'])) { ?>
                 <div class="alert alert-danger" role="alert">
                     <?= htmlspecialchars($_GET['error']); ?>
                 </div>
-            <?php } ?> -->
+            <?php } ?>
             
             <div class="mb-3">
                 <label class="form-label">Email address</label>

@@ -1,10 +1,10 @@
-<!-- <?php
+<?php
 session_start();
 
 // if the admin is logged in
 if (isset($_SESSION['user_id']) && isset($_SESSION['user_email'])) {
 
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -47,16 +47,45 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_email'])) {
         </div>
     </nav>
     <!-- End Navbar -->
+
+    <div class="container">
+        <h4>All Books</h4>
+        <table class="table table-bordered shadow">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Learn Backend</td>
+                    <td>PBK</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, corporis.</td>
+                    <td>Penjurusan</td>
+                    <td>
+                        <a href="" class="btn btn-warning">Edit</a>
+                        <a href="" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 <!-- Bootstrap 5-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>
 
-<!-- <?php 
+<?php 
 
 } else {
     header("Location: login.php");
     exit;
 }
 
-?> -->
+?>
