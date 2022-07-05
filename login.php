@@ -31,8 +31,12 @@
                 <label class="form-label">Password</label>
                 <input type="password" class="form-control" name="password">
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-            <a href="index.php">Back to store</a>
+            <div class="text-center mb-2">
+                <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 20px;">Login</button>
+            </div>
+            <div class="text-center">
+                <a href="index.php" class="text-decoration-none">Back to store</a>
+            </div>
         </form>
     </div>
 </body>
